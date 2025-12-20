@@ -5,7 +5,7 @@ app_name = 'onlinecourse'
 
 urlpatterns = [
     path(
-        '<int:course_id>/submit/',
+        'course/<int:course_id>/submit/',
         views.submit,
         name='submit'
     ),
@@ -15,3 +15,4 @@ urlpatterns = [
         name='show_exam_result'
     ),
 ]
+
